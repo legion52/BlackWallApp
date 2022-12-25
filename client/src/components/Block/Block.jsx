@@ -23,8 +23,8 @@ export default function Block({ currency, setCurrency, currentCurrency, setCurre
 
   return (
     <div className={style.block}>
-      <div className={style.catBox}>
-        <ul className={style.cat}>
+      <div className={style.categoriesBox}>
+        <ul className={style.categories}>
           {defaultCurrencies.map((cur) => (
             <li key={cur} className={`${style} ${currency.current === cur ? style.active : ''}`} onClick={() => setCurrency(cur)}>{cur} </li>
           ))}
