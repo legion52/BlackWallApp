@@ -24,6 +24,11 @@ export default function ExchangerForm() {
     setToBlock((prev) => ({ ...prev, current: cur }))
   }
 
+  const changeCurrentCurrency = (cur) => {
+    setCurrentCurrency(cur)
+    setToBlock((prev) => ({ ...prev, current: 'Все' }))
+
+  }
   useEffect(() => {
     dispatch(setFilter(currentCurrency))
   }, [currentCurrency])
@@ -31,7 +36,7 @@ export default function ExchangerForm() {
   return (
     <div className={style.wrapper}>
       <span className={style.title}>Отдаете</span>
-      <Block currency={fromBlock} setCurrency={changeFromBlock} currentCurrency={currentCurrency} setCurrentCurrency={setCurrentCurrency} />
+      <Block currency={fromBlock} setCurrency={changeFromBlock} currentCurrency={currentCurrency} setCurrentCurrency={changeCurrentCurrency} />
       <span className={style.title}>Получаете</span>
       <Block to={true} currency={toBlock} setCurrency={changeToBlock} />
     </div>
