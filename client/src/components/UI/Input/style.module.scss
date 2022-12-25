@@ -6,24 +6,25 @@
   border-radius: 3px;
   border: solid 1px #cfd5da;
   margin: auto;
-}
 
-input {
-  width: 350px;
-  border: none;
-  outline: none;
-  font-size: 26px;
-  color: #a6abad;
-  padding-left: 15px;
-}
+  input {
+    width: 350px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    color: #a6abad;
+    padding-left: 15px;
+  }
 
-select {
-  background: none;
-  border: none;
-  font-size: 26px;
+  select {
+    background: none;
+    border: none;
+    font-size: 26px;
 
-  border-left: solid 1px #cfd5da;
-  outline: none;
-  width: 200px;
-  text-align: center;
+    border-left: solid 1px #cfd5da;
+    outline: none;
+    width: 200px;
+    text-align: center;
+  }
+
 }

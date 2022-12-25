@@ -1,28 +1,30 @@
 .block {
   margin-bottom: 120px;
-}
 
-.cat {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 5px 75px;
-  font-size: 26px;
-  font-family: sans-serif;
-  overflow: hidden;
-}
-li {
-  display: inline-flex;
-  padding: 5px 5px;
-  border: 1px solid white;
-  color: rgb(78, 73, 73);
-  border-radius: 5px;
-  cursor: pointer;
-  justify-content: center;
-}
+  .catBox {
+    .cat {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 5px 75px;
+      font-size: 26px;
+      font-family: sans-serif;
+      overflow: hidden;
 
-.active {
-  color:white;
-  background-color: rgb(205, 75, 75);
-}
+      li {
+        display: inline-flex;
+        padding: 5px 5px;
+        border: 1px solid white;
+        color: rgb(78, 73, 73);
+        border-radius: 5px;
+        cursor: pointer;
+        justify-content: center;
+      }
+      .active {
+        color: white;
+        background-color: rgb(205, 75, 75);
+      }
+    }
+  }
 
+}
