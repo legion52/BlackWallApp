@@ -317,6 +317,7 @@ const curencySlice = createSlice({
   filter: {},
   reducers: {
     setFilter(state, action) {
+      console.log(action.payload)
       state.currentFilter = state.filter.filter(el => el['from']['code'] === action.payload)
 
     }

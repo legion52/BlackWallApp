@@ -5,7 +5,7 @@ export default function Input({ list, setCurrentCurrency, currentCurrency }) {
   return (
     <div className={style.inputBox}>
       <input onChange={(e) => setTitle(e.target.value)} disabled={list.length < 1} value={list.length < 1 ? 'Выберите другую категорию!' : title} type="text" />
-      <select onChange={(e) => setCurrentCurrency(e.target.value)}>
+      <select onChange={(e) => setCurrentCurrency(e.target.value)} value={currentCurrency}>
         {list.map(el => <option key={el} >{el}</option>)}
       </select>
 

@@ -8,7 +8,7 @@ import { setFilter } from '../../redux/curencySlice'
 
 export default function ExchangerForm() {
   const [fromBlock, setFromBlock] = useState({ current: 'Все' })
-  const [toBlock, setToBlock] = useState({ current: 'Все'})
+  const [toBlock, setToBlock] = useState({ current: 'Все' })
   const [currentCurrency, setCurrentCurrency] = useState('BTC')
   const categories = useSelector(state => state.currency.categories)
   const dispatch = useDispatch()
@@ -16,7 +16,7 @@ export default function ExchangerForm() {
   const changeFromBlock = (cur) => {
     setFromBlock((prev) => ({ ...prev, current: cur }))
     setToBlock((prev) => ({ ...prev, current: 'Все' }))
-    dispatch(setFilter(null))
+    dispatch(setFilter(categories[cur][0]))
     setCurrentCurrency(categories[cur][0])
   }
 
