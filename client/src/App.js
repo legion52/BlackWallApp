@@ -1,5 +1,5 @@
 import Main from "./components/Main/Main";
-//dfedgdsffergfekgkjg
+const App = () =>{
   return (
     <div className="App">
       <Main />
