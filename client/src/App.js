@@ -1,10 +1,7 @@
 import Main from "./components/Main/Main";
 //dfedgdsffergfekgkjg
-function App() {
-  const clickHandler = () => {
-    alert('Проверка')
   return (
-    <div className="App" oneClick={clickHandler}>
+    <div className="App">
       <Main />
     </div>
   );
